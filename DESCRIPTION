@@ -1,0 +1,31 @@
+Package: AbunOI
+Type: Package
+Title: Semiparametric empirical likelihood inference for abundance from one-inflated capture-recapture data
+Version: 0.1-1
+Author: c(person("Liu", "Yang",
+            email = "liuyangecnu@163.com", 
+            role=c("aut","cre")),
+            person("Liu", "Yukun",
+            email = "ykliu@sfs.ecnu.edu.cn", 
+            role=c("aut")),
+            person("Li", "Pengfei",
+            email = "pengfei.li@uwaterloo.ca", 
+            role=c("aut")),
+            person("Zhang", "Riquan",
+            email = "rqzhang@stat.ecnu.edu.cn", 
+            role=c("aut")))
+Maintainer: Yang Liu <liuyangecnu@163.com>
+Description: This package implements the semiparametric empirical likelihood (EL) inference for abundance via EM algorithms. We fit the one-inflated capture-recapture data by zero-truncated one-inflated regression model and one-inflated zero-truncated regression model. Under these models, this package provides the maximum EL estimator and EL ratio confidence interval of the population size or abundance. The maximum EL estimator and bootstrap-based standard error are provided for the regression coefficients. The EL-based score tests are also provided for testing the existence of one-inflation. 
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+RoxygenNote: 7.1.1
+Imports: 
+    methods, 
+    stats
+Suggests: 
+    knitr, 
+    rmarkdown,
+    testthat (>= 2.1.0)
+VignetteBuilder: knitr
